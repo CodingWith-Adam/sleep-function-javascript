@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(
+          0deg,
+          rgb(138, 68, 12) 0%,
+          rgb(192, 195, 34) 100%
+        );
+      }
+      #doneText {
+        display: none;
+        font-size: 5em;
+        font-weight: 900;
+        color: white;
+      }
+      .loader {
+        border: 30px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 30px solid black;
+        width: 390px;
+        height: 390px;
+        -webkit-animation: spin 3s linear infinite; /* Safari */
+        animation: spin 3s linear infinite;
+      }
+
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="spinner" class="loader"></div>
+    <div id="doneText">Order Complete</div>
+    <script src="index.js"></script>
+  </body>
+</html>
