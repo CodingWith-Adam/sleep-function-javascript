@@ -8,6 +8,6 @@ In this video I’m going to show you how you can add a sleep function in JavaSc
 
 This is the solution used in the video:
 
-async function sleep(seconds) {
-return new Promise((resolve) => setTimeout(resolve, seconds \* 1000));
-}
+  async function sleep(seconds) {
+    return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
+  }
